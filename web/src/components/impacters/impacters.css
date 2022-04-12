@@ -1,0 +1,34 @@
+.title {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .page {
+    padding: 0 5rem;
+  }
+
+  .impacters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .page {
+    padding: 0 10rem;
+  }
+}
+
+.impacter {
+  margin-bottom: 2rem;
+}
+
+.name {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.image {
+  border-radius: 50%;
+}

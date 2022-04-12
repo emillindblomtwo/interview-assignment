@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Posts from './components/posts/posts';
+import Navbar from './components/navbar/navbar';
+import Impacters from './components/impacters/impacters';
 
 function App() {
+  const [activeTab, setActiveTab] = useState(0);
+  const tabs = ['Posts', 'Impacters'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <div className="content">
+        {activeTab === 0 && <Posts />}
+        {activeTab === 1 && <Impacters />}
+      </div>
     </div>
   );
 }

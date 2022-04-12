@@ -1,0 +1,31 @@
+.title {
+  margin-bottom: 5rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pageNumber {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .page {
+    padding: 0 5rem;
+  }
+
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .page {
+    padding: 0 10rem;
+  }
+}

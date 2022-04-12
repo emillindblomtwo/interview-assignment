@@ -2,21 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.content {
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 600px) {
+  .content {
+    padding: 5rem;
+  }
 }
 
-.App-link {
-  color: #09d3ac;
+@media screen and (min-width: 900px) {
+  .content {
+    padding: 10rem;
+  }
 }

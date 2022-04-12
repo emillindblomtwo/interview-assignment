@@ -1,0 +1,33 @@
+.post {
+  cursor: pointer;
+  box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.38);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  text-align: left;
+  margin: 1rem 2rem;
+  height: 10rem;
+}
+
+@media screen and (min-width: 600px) {
+  .post {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .post {
+    width: 30%;
+  }
+}
+
+.post-image {
+  border-radius: 0 0 1rem 1rem;
+  height: 20rem;
+}
